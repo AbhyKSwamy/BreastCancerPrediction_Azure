@@ -6,31 +6,63 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
    <body>
-      <title>Breast Cancer Prediction</title>
+      <title>CABG NH RISK SCORES</title>
 	  <div class="container">
 		<div class="row">
 
 		  <form action="{{ url_for('predict')}}" method="POST">
 		  	<div class="col-sm-9">
 			 <div class="form-group  purple-border">
-				  <label for="comment">texture_mean:</label>
+				  <label for="comment">Age:</label>
 				  <textarea class="form-control" rows="2" id="query1" name="query1" rows="2" cols="5" autofocus>{{query1}}</textarea>
 			</div>
 			<div class="form-group  purple-border">
-				  <label for="comment">perimeter_mean:</label>
+				  <label for="comment">Pre_Op_S_Cr:</label>
 				  <textarea class="form-control" rows="2" id="query2" name="query2" rows="2" cols="5" autofocus>{{query2}}</textarea>
 			</div>
 			<div class="form-group  purple-border">
-				  <label for="comment">smoothness_mean:</label>
+				  <label for="comment">BMI:</label>
 				  <textarea class="form-control" rows="2" id="query3" name="query3" rows="2" cols="5" autofocus>{{query3}}</textarea>
 			</div>
 			<div class="form-group  purple-border">
-				  <label for="comment">compactness_mean:</label>
+				  <label for="comment">Pre_Op_HCT:</label>
 				  <textarea class="form-control" rows="2" id="query4" name="query4" rows="2" cols="5" autofocus>{{query4}}</textarea>
 			</div>
 			<div class="form-group  purple-border">
-				  <label for="comment">symmetry_mean:</label>
+				  <label for="comment">Pre_Op_TC:</label>
 				  <textarea class="form-control" rows="2" id="query5" name="query5" rows="2" cols="5" autofocus>{{query5}}</textarea>
+            </div>
+			<div class="form-group  purple-border">
+				  <label for="comment">EF:</label>
+				  <textarea class="form-control" rows="2" id="query6" name="query6" rows="2" cols="5" autofocus>{{query6}}</textarea>
+            </div>
+			<div class="form-group  purple-border">
+				  <label for="comment">Dysarrythmia:</label>
+				  <textarea class="form-control" rows="2" id="query7" name="query7" rows="2" cols="5" autofocus>{{query7}}</textarea>
+            </div>
+			<div class="form-group  purple-border">
+				  <label for="comment">mR:</label>
+				  <textarea class="form-control" rows="2" id="query8" name="query8" rows="2" cols="5" autofocus>{{query8}}</textarea>
+            </div>
+			<div class="form-group  purple-border">
+				  <label for="comment">LA SIZE:</label>
+				  <textarea class="form-control" rows="2" id="query9" name="query9" rows="2" cols="5" autofocus>{{query9}}</textarea>
+            </div>
+			<div class="form-group  purple-border">
+				  <label for="comment">NYHA:</label>
+				  <textarea class="form-control" rows="2" id="query10" name="query10" rows="2" cols="5" autofocus>{{query10}}</textarea>
+            </div>
+			<div class="form-group  purple-border">
+				  <label for="comment">LVIDD:</label>
+				  <textarea class="form-control" rows="2" id="query11" name="query11" rows="2" cols="5" autofocus>{{query11}}</textarea>
+            </div>
+			<div class="form-group  purple-border">
+				  <label for="comment">Smoking:</label>
+				  <textarea class="form-control" rows="2" id="query12" name="query12" rows="2" cols="5" autofocus>{{query12}}</textarea>
+            </div>
+			<div class="form-group  purple-border">
+				  <label for="comment">LVIDS:</label>
+				  <textarea class="form-control" rows="2" id="query13" name="query13" rows="2" cols="5" autofocus>{{query13}}</textarea>
 			</div>
 			</div>
 			<div class="col-sm-3">
@@ -41,8 +73,12 @@
 		  
 		<div class="row"> 
 			<div class="col-sm-9">
-			<textarea class="form-control" rows="2" id="comment" name="query6" rows="2" cols="5" autofocus>{{output1}}</textarea>
-			<textarea class="form-control" rows="2" id="comment" name="query7" rows="2" cols="5" autofocus>{{output2}}</textarea>
+			<textarea class="form-control" rows="2" id="comment" name="query14" rows="2" cols="5" autofocus>{{output1}}</textarea>
+			<textarea class="form-control" rows="2" id="comment" name="query15" rows="2" cols="5" autofocus>{{output2}}</textarea>
+            <textarea class="form-control" rows="2" id="comment" name="query16" rows="2" cols="5" autofocus>{{output3}}</textarea>
+ 			<textarea class="form-control" rows="2" id="comment" name="query17" rows="2" cols="5" autofocus>{{output4}}</textarea>
+			<textarea class="form-control" rows="2" id="comment" name="query18" rows="2" cols="5" autofocus>{{output5}}</textarea>
+			<textarea class="form-control" rows="2" id="comment" name="query19" rows="2" cols="5" autofocus>{{output6}}</textarea>
 			</div>
 		</div>
 	</div>		
